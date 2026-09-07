@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Sabre Achieve Diary</title>
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#1c2b4a" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Achieve" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header id="app-header">
+  <nav id="main-nav">
+    <button id="nav-today" class="nav-btn" data-view="day">Today</button>
+    <button id="nav-week" class="nav-btn" data-view="week">This Week</button>
+    <button id="nav-settings" class="nav-btn icon-btn" data-view="settings" aria-label="Settings">&#9881;</button>
+  </nav>
+  <div id="sub-nav">
+    <button id="prev-btn" class="arrow-btn" aria-label="Previous">&#8592;</button>
+    <div id="sub-nav-title"></div>
+    <button id="next-btn" class="arrow-btn" aria-label="Next">&#8594;</button>
+  </div>
+</header>
+
+<main id="view-root">
+  <p class="loading">Loading&hellip;</p>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/dateUtils.js"></script>
+<script src="js/db.js"></script>
+<script src="js/settingsView.js"></script>
+<script src="js/dayView.js"></script>
+<script src="js/weekView.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
